@@ -1,0 +1,8 @@
+_aci.txt
+data/
+projects.json
+storage.env
+mnt/
+obj/
+bin/
+.vscode/
