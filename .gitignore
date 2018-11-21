@@ -6,3 +6,5 @@ mnt/
 obj/
 bin/
 .vscode/
+projects.json
+project.json
