@@ -4,7 +4,6 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Microsoft.Extensions.Configuration;
 using Microsoft.WindowsAzure.Storage;
 using Microsoft.WindowsAzure.Storage.Auth;
 using Microsoft.WindowsAzure.Storage.Blob;
@@ -17,10 +16,6 @@ namespace up_for_grabs_feed
   {
     static void Main(string[] args)
     {
-
-      IConfiguration config = new ConfigurationBuilder()
-          .AddEnvironmentVariables()
-          .Build();
 
       var outputPath = Path.GetFullPath("projects.json");
       var result = new List<Project>();
@@ -100,8 +95,6 @@ namespace up_for_grabs_feed
         {
           Console.WriteLine("Process complete.");
         }
-
-
       }
     }
   }
